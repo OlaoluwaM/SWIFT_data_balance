@@ -68,7 +68,7 @@ const TIMEOUT = 60000000;
       if (shouldSendSMS) {
         console.log(' Letting recipients know...');
         await sendSMS(` Our remaining SWIFT data balance is ${remainingDataBalance}`);
-        console.log(' All Done!');
+        console.log(` All Done! at ${colors.underline(new Date().toLocaleDateString())}`);
       }
     }
   } catch (error) {
